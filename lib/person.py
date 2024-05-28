@@ -16,4 +16,17 @@ APPROVED_JOBS = [
 ]
 
 class Person:
-    pass
+    def __init__(self, name = 'Bruno', job = 'ITC'):
+        self._name = name
+        self._job = job
+
+    def get_name(self):
+        print({self.name})
+        return self.name
+    
+    def set_name(self, name):
+        if(type(name) in (str) and (1 <= len(name) <= 25)):
+            print('f{name}')
+            self.name = name
+        
+
